@@ -76,7 +76,6 @@ img {
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-decoration-line: none;
-    margin-left: 156px;
     margin-right: 76px;
     padding-top: 24px;
     padding-bottom: 24px;
@@ -101,6 +100,9 @@ img {
 }
 
 /*Мапа-Header сайту*/
+.page-header{
+    border-bottom: 1px solid var(--btn-bg-collor);
+}
 .header-wrapper {
     display: flex;
     align-items: center;
@@ -110,7 +112,7 @@ img {
     display: flex;
     text-decoration-line: none;
     text-decoration: none;
-    color: var(--title-text-color);
+   /* color: var(--title-text-color);*/
 }
 
 .map-link {
@@ -119,11 +121,11 @@ img {
     font-size: 16px;
     line-height: 1.5;
     gap: 40px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    align-items: center;
 }
 
-.map-link .link.current {
+
+.link.current {
     color: var(--accent-color);
 }
 
@@ -131,26 +133,28 @@ img {
     display: block;
 }
 
+.link{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    color: var(--title-text-color);
+}
+
 /*Контакти*/
 .contacts {
     display: flex;
     gap: 40px;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .contacts-container {
     margin-left: auto;
 }
 
-/*.contacts .contacts-list + .contacts-list{
-margin-left: 40px;
-}*/
-
 .contacts-item {
     color: var(--primary-text-color);
     text-decoration-line: none;
     text-decoration-style: none;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .contacts-item:hover,
@@ -160,11 +164,15 @@ margin-left: 40px;
 }
 
 /*Кнопки Button list*/
+
+.portfolio{
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
 .button {
     display: flex;
     gap: 24px;
-    padding-top: 96px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
     justify-content: center;
 }
 
@@ -221,8 +229,7 @@ margin-left: 40px;
     font-size: 20px;
     line-height: 1.2;
     color: var(--title-text-color);
-    padding-bottom: 8px;
-    padding-top: 32px;
+    margin-bottom: 8px;
 }
 
 
@@ -230,17 +237,20 @@ margin-left: 40px;
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    padding-bottom: 120px;
 }
 
 .cards-item {
     flex-basis: calc(100% - (24px*2))/3;
+}
 
+.cards-text{
+    color: var(--primary-text-color);
 }
 
 .cards-footer {
     padding-bottom: 32px;
     padding-top: 32px;
+    padding-left: 16px;
     border: 1px solid #E7E9FC;
     border-top: none;
 }
@@ -253,7 +263,7 @@ margin-left: 40px;
     text-align: center;
     background-color: var(--title-text-color);
     padding-top: 188px;
-    padding-bottom: 292px;
+    padding-bottom: 188px;
 }
 
 .hero-title {
@@ -272,6 +282,7 @@ margin-left: 40px;
 
     border-radius: 4px;
     padding: 16px 32px;
+    border: none;
     min-width: 169px;
     font-weight: 500;
     font-size: 16px;
@@ -303,6 +314,10 @@ margin-left: 40px;
 
 .skills-title {
     margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--title-text-color);
 }
 
 /*What are we doing*/
@@ -324,7 +339,7 @@ margin-left: 40px;
     line-height: 1.1;
     text-transform: capitalize;
     text-align: center;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .image-item {
@@ -335,6 +350,7 @@ margin-left: 40px;
 
 .team {
     background-color: var(--secondary-bg-color);
+    padding-top: 120px;
     padding-bottom: 120px;
 }
 
@@ -349,21 +365,13 @@ margin-left: 40px;
     flex-basis: calc(100% - (24px*3))/4;
 }
 
-
-.skills-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    color: var(--title-text-color);
-}
-
 .team-names {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     color: var(--title-text-color);
     text-align: center;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .team-position {
